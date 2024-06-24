@@ -1,0 +1,31 @@
+---
+author: MINU JOSE(23200724)
+title: Advanced Data Programming with R- Homework 1
+format: pdf
+fig-height: 4
+---
+
+## The Old Faithful Geyser Data
+
+The data used to plot the following scatter plot contains 2 variables:
+
+-   \textcolor{red}{eruptions} - *Duration of Eruption*
+
+-   \textcolor{red}{waiting} - *Waiting Time to next eruption*
+
+The data was recorded for the the Old Faithful geyser in Yellowstone National Park, Wyoming, USA. Both variables are measured in minutes.
+
+```{r}
+#| echo: false
+# loading the data
+data("faithful")
+#plotting a scatter plot
+plot(faithful$eruptions,faithful$waiting,pch=16,col="red",
+     main="Relation between Eruption time and Waiting time",xlab = "Eruption Time(min)",
+     ylab="Waiting Time(min)")
+
+```
+
+### Interpretation
+
+The above plot states that there is some linear relationship between the Eruption Time and Waiting Time. It can be seen that as the Duration of the eruption increases the Waiting Time for the next eruption also increases. So we can conclude that there is a positive correlation between the Duration of eruption and the waiting time for the next eruption.
